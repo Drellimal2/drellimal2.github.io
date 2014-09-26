@@ -12,10 +12,26 @@ html{
     font-style: oblique;
 }
 
-a:hover{
-    
+#references{
+    width : 100%;
+    padding : 10px;
+    background-color: #81d5f2;
 }
 
+a:active{
+    font-family: Calibri;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+a:hover{
+    color: lightgrey;
+}
+
+a:visited{
+    color : #4342f2;
+
+}
 img{
     position: absolute;
     right: 100px;
