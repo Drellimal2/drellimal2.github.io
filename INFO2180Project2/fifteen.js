@@ -44,12 +44,21 @@ function iswin(obj){
             break;
         }
     }
+    var control = $("controls");
+
     if(win && started){
-        alert("YOU WON\nPress Shuffle to start new game");
+        control.insert("<h2>You Won</h2>");
+
 
     }
     else if(win && !(started)){
-        alert("YOU SLY CHEATER\nPress Shuffle to start new game");
+        control.insert("<h2>You Smooooth Criminal</h2>");
+    }
+    else
+    {
+        if(control.childElementCount == 2) {
+            control.lastChild.remove();
+        }
     }
 
 }
@@ -118,7 +127,7 @@ window.onload = function(){
     position(pzzlpeices,positions);
     startup = false;
     alert("Welcome to my fifteen puzzle choose a board then press shuffle to start.");
-    var background = prompt("What background would you like?\n0 - Taylor Swift\n1 - Watch Dogs\n2 - Iron Man");
+    var background = prompt("What background would you like?\n0 - Taylor Swift\n1 - Android\n2 - Watch Dogs");
     for (var count = 0; count < pzzlpeices.length; count++){
         pzzlpeices[count].style.backgroundImage = backgrounds[background];
 
