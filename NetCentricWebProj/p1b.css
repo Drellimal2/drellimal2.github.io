@@ -32,16 +32,15 @@ th:nth-child(3){
     text-align: left;
 }
 
-td{
+td,th{
     
     padding-right: 30px;
 	border-left : 0px;
 	border-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
-th{
-        padding-right: 30px;
-}
 
 
 
