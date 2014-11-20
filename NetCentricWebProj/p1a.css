@@ -41,7 +41,7 @@ th{
         padding-right: 30px;
 }
 
-#total{
+.total{
     visibility: hidden;
     border-top: 1px;
     border-top-style: solid;
