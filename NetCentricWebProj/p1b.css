@@ -12,7 +12,11 @@ table{
 #headings{
 }
 
-#total{
+tr{
+	border-collapse: collapse;
+}
+
+.total{
     border-top: 2px;
     border-top-style: solid;
     border-top-color: #000000;
@@ -35,6 +39,7 @@ td{
 th{
         padding-right: 30px;
 }
+
 
 
     
