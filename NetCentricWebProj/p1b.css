@@ -1,0 +1,40 @@
+table{
+    font-family: Tahoma;
+    font-size: 13px;
+    border-collapse:collapse;
+    border-style: solid;
+    border-color: #d0d0ff;
+    border-width: 10px;
+  
+}
+
+#headings{
+}
+
+#total{
+    border-top: 2px;
+    border-top-style: solid;
+    border-top-color: #000000;
+    
+}
+
+
+td:nth-child(4),td:nth-child(5),td:nth-child(6){
+    text-align: center;
+}
+
+th:nth-child(3){
+    text-align: left;
+}
+
+td{
+    padding-right: 30px;
+}
+
+th{
+        padding-right: 30px;
+}
+
+
+    
+    
