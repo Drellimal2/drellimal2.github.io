@@ -33,12 +33,17 @@ th:nth-child(3){
 }
 
 td{
+    
     padding-right: 30px;
+	border-left : 0px;
+	border-right: 0px;
 }
 
 th{
         padding-right: 30px;
 }
+
+
 
 
 

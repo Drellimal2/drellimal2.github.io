@@ -25,6 +25,9 @@ td{
     border-top-style: solid;
     border-top-color: #FFFFFF;
     padding-right: 30px;
+	border-left : 0px;
+	border-right: 0px;
+	
 
 }
 
@@ -43,9 +46,6 @@ th{
 
 .total{
     visibility: hidden;
-    border-top: 1px;
-    border-top-style: solid;
-    border-top-color: #000000;
-    
+   
 }
     
