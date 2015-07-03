@@ -33,7 +33,7 @@ a:visited{
 
 }
 img{
-    position: absolute;
+    position: fixed;
     right: 100px;
     top:30px;
 }
