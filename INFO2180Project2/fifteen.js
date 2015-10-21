@@ -24,6 +24,7 @@ function findPos(obj) {
 }
 
 function addClass(obj){
+    console.log("hi");
     for(var i = 0; i<obj.length;i++) {
         var empty2 = ((findPos(obj[i])[1] - 151) / 25) + ((findPos(obj[i])[0] - 475) / 100);
         if (empty2 == empty + 4 || empty2 == empty - 4 || empty2 == empty - 1 || empty2 == empty + 1) {
@@ -128,6 +129,7 @@ window.onload = function(){
     var backgrounds = ['url("background_2.jpg")', 'url("background.jpg")','url("background_3.jpg")']
     var pzzlpeices = $$("div#puzzlearea div");
     position(pzzlpeices,positions);
+    addClass(pzzlpeices);
     startup = false;
     alert("Welcome to my fifteen puzzle choose a board then press shuffle to start.");
     var background = prompt("What background would you like?\n0 - Taylor Swift\n1 - Android\n2 - Watch Dogs");
