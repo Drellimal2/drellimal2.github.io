@@ -28,10 +28,13 @@ function addClass(obj){
         var empty2 = ((findPos(obj[i])[1] - 151) / 25) + ((findPos(obj[i])[0] - 475) / 100);
         if (empty2 == empty + 4 || empty2 == empty - 4 || empty2 == empty - 1 || empty2 == empty + 1) {
             obj[i].addClassName("movablepiece");
+        
+            console.log("ADDED");
         }
-        // else {
-        //     obj[i].removeClassName("movablepiece");
-        // }
+        
+        else {
+             obj[i].removeClassName("movablepiece");
+        }
     }
 
 }
@@ -108,12 +111,12 @@ function position(pzzlpeices, pos){
             pzzlpeices[count].style.top = (parseInt( countr /4) * 100) +'px';
             pzzlpeices[count].style.left = (( countr% 4) * 100) +'px';
 
-            pzzlpeices[count].onClick = function(){
+            pzzlpeices[count].on("click",function(){
                 //alert(this.id);
                 move_to_space(pzzlpeices[count]);
-                addClass(pzzlpeices);
+                //addClass(pzzlpeices);
                 iswin(pzzlpeices);
-            };
+            });
 
 
         }
