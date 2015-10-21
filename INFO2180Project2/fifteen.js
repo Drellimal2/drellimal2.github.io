@@ -111,7 +111,7 @@ function position(pzzlpeices, pos){
             pzzlpeices[count].style.top = (parseInt( countr /4) * 100) +'px';
             pzzlpeices[count].style.left = (( countr% 4) * 100) +'px';
 
-            pzzlpeices[count].on("click",function(){
+            pzzlpeices[count].onclick  = function(){
                 alert(this.id);
                 move_to_space(this);
                 addClass(pzzlpeices);
