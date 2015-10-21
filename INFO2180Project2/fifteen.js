@@ -110,7 +110,7 @@ function position(pzzlpeices, pos){
 
             pzzlpeices[count].onclick = function(){
                 //alert(this.id);
-                move_to_space(this);
+                move_to_space(pzzlpeices[count]);
                 addClass(pzzlpeices);
                 iswin(pzzlpeices);
             };
