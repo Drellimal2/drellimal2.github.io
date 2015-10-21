@@ -116,7 +116,7 @@ function position(pzzlpeices, pos){
                 move_to_space(this);
                 addClass(pzzlpeices);
                 iswin(pzzlpeices);
-            });
+            };
 
 
         }
