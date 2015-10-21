@@ -112,9 +112,9 @@ function position(pzzlpeices, pos){
             pzzlpeices[count].style.left = (( countr% 4) * 100) +'px';
 
             pzzlpeices[count].on("click",function(){
-                //alert(this.id);
-                move_to_space(pzzlpeices[count]);
-                //addClass(pzzlpeices);
+                alert(this.id);
+                move_to_space(this);
+                addClass(pzzlpeices);
                 iswin(pzzlpeices);
             });
 
